@@ -1,0 +1,18 @@
+<view class="container self">
+  <view class="nav d-flex flex-around">
+    <text class="active">进行中</text>
+    <text>已结办</text>
+  </view>
+  <scroll-view class="content">
+    <view class="card">
+      <view class="d-flex flex-between border-b p-1">
+        <view>申报时间</view>
+        <view>2020-01-03</view>
+      </view>
+      <view class="d-flex flex-between p-1 text-sm">
+        <text>{{t1}}</text>
+        <text>{{t2}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

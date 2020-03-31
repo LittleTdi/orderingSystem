@@ -1,0 +1,18 @@
+.container{
+  padding:15px 10px;
+}
+.switch{
+  height:30px;
+  width:50px;
+}
+textarea{
+  height:90px;
+}
+.submit>button{
+  width:90%;
+  color:white;
+  background-color: #4293F4;
+}
+.submit{
+  margin-bottom:20px;
+}

@@ -1,0 +1,28 @@
+.nav{
+  background:#fff;
+  padding-top:10px;
+}
+.container{
+  width:100vw;
+  height:100vh;
+  background:#f9f9f9;
+}
+.active{
+  border-bottom:3px solid #4293F4;
+}
+.nav text{
+  padding:5px;
+}
+.self .content{
+  height:88%;
+}
+.card{
+  width:80%;
+  background:#fff;
+  margin-left:auto;
+  margin-right:auto;
+  padding:15px 20px;
+  margin-top:10px;
+  border-radius:6px;
+  border:1px solid #f2f2f2;
+}

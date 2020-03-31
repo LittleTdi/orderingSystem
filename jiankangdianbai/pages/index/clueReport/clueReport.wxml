@@ -1,0 +1,115 @@
+<view class="container">
+  <view class="title">反映人信息</view>
+  <view class="border-b p-1">
+    <view class="subtitle">姓名</view>
+    <input type="text" placeholder="请输入您的姓名" bindinput="inputName"></input>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">联系方式</view> 
+    <input type="number" placeholder="请输入您的联系方式" bindinput="inputPhone"></input>
+  </view>
+</view>
+<view class="container">
+  <view class="title">涉事人信息</view>
+  <view class="border-b p-1">
+    <view class="subtitle">姓名</view>
+    <input type="text" placeholder="请输入涉事人的姓名" bindinput="inputIname"></input>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">性别</view>
+    <view class="d-flex flex-between">
+        <input placeholder="请选择性别" type="text" disabled value="{{involver.sex}}"></input>
+        <picker bindchange="picksex" value="{{involver.sex}}" range="{{sexarr}}">
+          <view class="text-blue">选择</view>
+        </picker>
+    </view>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">联系方式</view> 
+    <input type="number" placeholder="请输入涉事人的联系方式" bindinput="inputIphone"></input>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">出生日期</view> 
+    <view class="d-flex flex-between">
+      <input placeholder="请选择出生日期" type="text" disabled value="{{involver.date}}"></input>
+      <picker  mode="date" value="{{involver.date}}" start="1900-09-01" end="2020-09-01" bindchange="pickBornDate">
+        <view class="text-blue">选择</view>
+      </picker>
+    </view>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">证件类型</view> 
+    <view class="d-flex flex-between">
+      <input placeholder="请选择证件类型" type="text" disabled value="{{cardtype}}"></input>
+      <picker value="{{cardtype}}" bindchange="pickcardtype" range="{{cardtypes}}">
+        <view class="text-blue">选择</view>
+      </picker>
+    </view>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">证件号码</view> 
+    <input type="idcard" placeholder="请输入涉事人的证件号码" bindinput="inputIcardNum"></input>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">居住地址</view> 
+    <view class="d-flex flex-between">
+      <input placeholder="请选择居住地址" type="text" disabled value="{{involver.area}}"></input>
+      <!-- <picker mode="region" value="{{involver.area}}">
+        <view class="text-blue">选择</view>
+      </picker> -->
+      <view bindtap="openDialog" class="text-blue">选择</view>
+    </view>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">详细地址</view> 
+    <input type="text" placeholder="请填写详细地址（楼栋门牌号）" bindinput="inputIdetail"></input>
+  </view>
+  <view class="border-b p-1">
+    <view>关联车牌号码</view> 
+    <input type="text" placeholder="请输入车牌号码" bindinput="inputIcarNum"></input>
+  </view>
+</view>
+
+<view class="container">
+  <view class="title">人员类型（必选）</view>
+  <radio-group>
+    <view wx:for="{{persontypes}}" wx:key="index" class="border-b p-1">
+      <radio></radio><text class="subtitle">{{item.value}}</text>
+      <view style="margin-left:30px;" class="avianize">{{item.detail}}</view>
+    </view>
+  </radio-group>
+</view>
+
+<view class="container">
+  <view class="title">是否有湖北旅居史</view>
+  <view class="d-flex flex-between border-b p-1">
+    <view>2010年1月后是否居住或\t途经湖北</view>
+    <image src="../../../images/off.png" class="switch"></image>
+  </view>
+</view>
+<view class="container">
+  <view class="title">是否有如下症状（必选）</view>
+  <checkbox-group>
+      <view wx:for="{{symptoms}}" wx:key="index" class="border-b p-1">
+        <checkbox>
+          <text>{{item}}</text>
+        </checkbox>
+      </view>
+  </checkbox-group>
+  <view class="border-b p-1">
+    <view class="subtitle">详细描述</view>
+    <textarea placeholder="请详细描述您的症状情况" maxlength="140"></textarea>
+  </view>
+</view>
+<view class="submit" bindtap="submit"><button>提交</button></view>
+<view class="weui-demo-dialog weui-demo-dialog_show" wx:if="{{istrue==true}}">
+      <view class="weui-mask" bindtap="closeDialog"></view>
+      <view class="weui-actionsheet weui-actionsheet_toggle" style="border-radius:0;" catchtap="stopEvent">
+          <view style="background:#fff;padding-top:40rpx;">
+              
+          </view>
+          <view class="weui-actionsheet__menu" style="padding:10px 0;">
+              <button style="width:90%;margin-bottom:10px;" wx:for="{{areas}}" wx:key="index" bindtap="pickArea" data-i="{{index}}">{{item}}</button>
+          </view>
+      </view>
+    </view>

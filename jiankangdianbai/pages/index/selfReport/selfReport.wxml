@@ -1,0 +1,88 @@
+<view class="container">
+  <view class="title">基本信息</view>
+  <view class="border-b p-1">
+    <view class="subtitle">姓名</view>
+    <input type="text" placeholder="请输入您的姓名"></input>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">性别</view>
+    <view class="d-flex flex-between">
+        <input placeholder="请选择性别" type="text" disabled value="{{sex}}"></input>
+        <picker bindchange="picksex" value="{{sex}}" range="{{sexarr}}">
+          <view class="text-blue">选择</view>
+        </picker>
+    </view>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">联系方式</view> 
+    <input type="number" placeholder="请输入您的联系方式"></input>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">出生日期</view> 
+    <view class="d-flex flex-between">
+      <input placeholder="请选择出生日期" type="text" disabled value="{{date}}"></input>
+      <picker  mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="pickBornDate">
+        <view class="text-blue">选择</view>
+      </picker>
+    </view>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">证件类型</view> 
+    <view class="d-flex flex-between">
+      <input placeholder="请选择证件类型" type="text" disabled value="{{cardtype}}"></input>
+      <picker value="{{cardtype}}" bindchange="pickcardtype">
+        <view class="text-blue">选择</view>
+      </picker>
+    </view>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">证件号码</view> 
+    <input type="idcard" placeholder="请输入您的证件号码"></input>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">居住地址</view> 
+    <view class="d-flex flex-between">
+      <input placeholder="请选择居住地址" type="text" disabled value="{{address}}"></input>
+      <picker mode="region">
+        <view class="text-blue">选择</view>
+      </picker>
+    </view>
+  </view>
+  <view class="border-b p-1">
+    <view class="subtitle">详细地址</view> 
+    <input type="text" placeholder="请填写详细地址（楼栋门牌号）"></input>
+  </view>
+</view>
+
+<view class="container">
+  <view class="title">人员类型（必选）</view>
+  <radio-group>
+    <view wx:for="{{persontypes}}" wx:key="index" class="border-b p-1">
+      <radio></radio><text class="subtitle">{{item.value}}</text>
+      <view style="margin-left:30px;" class="avianize">{{item.detail}}</view>
+    </view>
+  </radio-group>
+</view>
+
+<view class="container">
+  <view class="title">是否有湖北旅居史</view>
+  <view class="d-flex flex-between border-b p-1">
+    <view>2010年1月后是否居住或\n途经湖北</view>
+    <image src="../../../images/off.png" class="switch"></image>
+  </view>
+</view>
+<view class="container">
+  <view class="title">是否有如下症状（必选）</view>
+  <checkbox-group>
+      <view wx:for="{{symptoms}}" wx:key="index" class="border-b p-1">
+        <checkbox>
+          <text>{{item}}</text>
+        </checkbox>
+      </view>
+  </checkbox-group>
+  <view class="border-b p-1">
+    <view>详细描述</view>
+    <textarea placeholder="请详细描述您的症状情况" maxlength="140"></textarea>
+  </view>
+</view>
+<view class="submit"><button>提交</button></view>

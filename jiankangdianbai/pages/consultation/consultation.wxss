@@ -1,0 +1,21 @@
+.consultation>image{
+  width:100%;
+  height:90px;
+}
+.consultation .d-flex>.d-flex image{
+  width:50px;
+  height:50px;
+  margin-right:10px;
+}
+.consultation .d-flex>image:last-child{
+  width:13px;
+  height:17px;
+}
+.consultation .content{
+  padding:0 10px;
+}
+.consultation .title{
+  font-size:18px;
+  color:#000;
+  font-weight:normal;
+}

@@ -1,0 +1,38 @@
+.text-center{
+  text-align: center;
+}
+.buy-mask view{
+  font-size:14px;
+}
+.buy-mask view.title{
+  padding:20px 0 10px 0;
+  font-size: 20px;
+
+}
+.buy-mask{
+  width:90%;
+  margin:auto;
+}
+.text-indent{
+  text-indent: 20px;
+}
+.text-orange{
+  color:orange;
+}
+.buy-mask .content{
+  margin-top:15px;
+}
+.buy-mask .content>view{
+  padding:5px 0;
+}
+.buy{
+  width:100%;
+  color:#fff;
+}
+button.disabled[disabled]{
+  background: #A0C9F9;
+  color:#fff;
+}
+.undisabled{
+  background:#3B79CB;
+}

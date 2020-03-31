@@ -1,0 +1,15 @@
+<view class="consultation">
+  <image src="../../images/banner.png"></image>
+  <view class="content" >
+    <view class="d-flex flex-between border-b p-1" wx:for="{{data}}" wx:key="{{index}}">
+      <view class="d-flex">
+        <image src="{{item.imgUrl}}"></image>
+        <view>
+          <view class="title">{{item.name}}</view>
+          <view class="text-sm">{{item.desc}}</view>
+        </view>
+      </view>
+      <image src="../../images/m4.png"></image>
+    </view>
+  </view>
+</view>

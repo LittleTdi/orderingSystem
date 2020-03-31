@@ -1,0 +1,26 @@
+<view class="buy-mask">
+  <view class="title text-center">关于口罩预约购买的说明</view>
+  <view class="text-indent">为满足电白市民购买口罩的需要，我们联合了广药集团为广大群众提供线上预约购买及配送服务。</view>
+  <view class="text-indent">系统试运阶段，特定以下规则：</view>
+  <view class="content">
+    <view class="text-orange">1、系统试运时间调整为2020年1月30日-2020年2月5日，每天晚上8点开始,市民可预约购买第二天的口罩。</view>
+    <view class="text-orange">2、系统试运阶段,凡预的成功的市民口罩均为免费
+目享受免费送货上门的服务(仅限于广州市内)。</view>
+    <view class="text-orange">3、每人每天最多可预约5个口置,预约将以提交申请的
+先后次序排序,先到先得。如果当日未能预约成功,可
+于次日晚8点再次预约。</view>
+    <view class="text-orange">4、请注意:“预的登记完成”不等于“预的成功,
+预的结果请前往“个人中心一我的预约”中查看,试运
+行阶段可能稍有延迟,请耐心等待,谢您的谅解。</view>
+    <view class="text-orange">5、为确保及时了解您的健康情况,预约前须先进行健
+康料录入。建议提前填写,以免错过预的最任时机。</view>
+    <view class="text-orange">6、试运阶段结東后具体预的规则将另行通知。</view>
+  </view>
+  <view style="margin:20px 0;width:100%;">
+    <checkbox-group bindchange="select">
+      <checkbox class="p-1" checked="{{choose}}" value="已阅读"></checkbox>我已阅读口罩购买说明
+    </checkbox-group>
+    <button class="buy {{choose? 'undisabled':'disabled'}}" disabled="{{choose? false:true}}">我要预约购买</button>
+  </view>
+  
+</view>

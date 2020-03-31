@@ -1,0 +1,59 @@
+<view class="index" style="background:#f5f5f5 url('../../images/bg.png') no-repeat;background-size:100% 24%;">
+  <view class="index-container">
+    <view>
+      <view class="title">
+        <text style="margin-right:15px;">防控疫情</text>
+        <text>爱护你我</text>
+      </view>
+      <view class="sub-title">
+        <text>电白区政府</text>
+        <text style="background:url('../../images/logo.png') no-repeat;background-size:100% 100%;padding:2px 30px;">科学防治，精准施策</text>
+      </view>
+    </view>
+    <scroll-view class="content" scroll-y="true">
+        <view class="d-flex flex-center" bindtap="toSelfReport">
+          <view>
+            <image src="../../images/c1.png" class="c-icon"></image>
+          </view>
+          <view>
+            <view class="c-title">健康自查上报</view>
+            <view class="c-detail">
+              普查所有市民健康状况，针对特定症状，社区将根据情况安排相关服务
+            </view>
+          </view>
+        </view>
+        <view class="d-flex flex-center" bindtap="toClue">
+          <view><image src="../../images/c2.png" class="c-icon"></image></view>
+          <view>
+            <view class="c-title">疫情线索上报</view>
+            <view class="c-detail">
+              如发现身边与新型冠状病毒疫情相关线索，请如实上报详细情况
+            </view>
+          </view>
+        </view>
+        <view class="d-flex flex-center" bindtap="toBuyMask">
+          <view><image src="../../images/c3.png" class="c-icon"></image></view>
+          <view>
+            <view class="c-title">防疫物资供需</view>
+            <view class="c-detail">
+              为防疫工作提供物资需求，为电白区民提供线上购买口罩服务
+            </view>
+          </view>
+        </view>
+        <view class="d-flex flex-center" bindtap="toConsultation">
+          <view>
+            <image src="../../images/c4.png" class="c-icon"></image>
+          </view>
+          <view>
+            <view class="c-title">就诊指南</view>
+            <view class="c-detail">
+              茂名多家医院与第三方医疗平台免费为广州市民提供在线疫情问诊服务
+            </view>
+          </view>
+        </view>
+
+        <view class="title-tab">电白区政府主办</view>
+    </scroll-view>
+    
+  </view>
+</view>

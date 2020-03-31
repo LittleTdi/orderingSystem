@@ -1,0 +1,75 @@
+<view class="bg">
+  <view class="detail">
+    <view class="d-flex flex-between">
+      <view>申报时间：2010-01-02</view>
+      <view>已结办</view>
+    </view>
+    <view>
+      <view class="card">
+        <view class="border-b p-1">
+          <view class="dtitle">基本信息</view>
+          <view class="d-flex flex-between text-sm">
+            <view>姓名</view>
+            <view>李凡芳</view>
+          </view>
+          <view class="d-flex flex-between text-sm">
+            <view>联系方式</view>
+            <view>13412345678</view>
+          </view>
+        </view>
+
+        <view class="border-b p-1">
+          <view class="dtitle">基本信息</view>
+          <view class="d-flex flex-between text-sm">
+            <view>姓名</view>
+            <view>偶或</view>
+          </view>
+          <view class="d-flex flex-between text-sm">
+            <view>性别</view>
+            <view>男</view>
+          </view>
+          <view class="d-flex flex-between text-sm">
+            <view>联系方式</view>
+            <view>13523456789</view>
+          </view>
+          <view class="d-flex flex-between text-sm">
+            <view>出生日期</view>
+            <view>1999-9-08</view>
+          </view>
+          <view class="d-flex flex-between text-sm">
+            <view>证件类型</view>
+            <view>身份证</view>
+          </view>
+          <view class="d-flex flex-between text-sm">
+            <view>证件号码</view>
+            <view>440442199909084311</view>
+          </view>
+          <view class="d-flex flex-between text-sm">
+            <view>居住地址</view>
+            <view>电白区</view>
+          </view>
+        </view>
+
+        <view class="border-b p-1">
+          <view class="dtitle">人员类型</view>
+          <view class="text-sm">未返电白本地常住居民</view>
+        </view>
+
+        <view class="border-b p-1">
+          <view class="dtitle">是否有湖北居住史</view>
+          <view class="text-sm">否</view>
+        </view>
+        <view class="border-b p-1">
+          <view class="dtitle">是否有不适症状</view>
+          <view class="text-sm">发热</view>
+        </view>
+        <view class="border-b p-1">
+          <view class="dtitle">详细描述</view>
+          <view class="text-sm">有点发低烧，没有咳嗽和其他不适</view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  
+</view>

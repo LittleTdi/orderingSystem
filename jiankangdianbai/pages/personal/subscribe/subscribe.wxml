@@ -1,0 +1,13 @@
+<view class="sub">
+  <view class="no-data" wx:if="{{subs.length==0}}">暂无预约</view>
+  <view class="content">
+    <view class="card d-flex flex-between">
+      <view>
+        <view>预约信息</view>
+        <view class="text-sm"><text>口罩预约</text><text style="margin-left:15px;">x5</text></view>  
+      </view>
+      <view class="text-red">预约失败</view>
+    </view>
+  </view>
+  <view class="explan">只显示近24小时内的预约记录</view>
+</view>
