@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/wode/serviceCenter/serviceCenter",
+    "pages/wode/myDoctor/myDoctor",
+    "pages/wode/evaluation/evaluation",
+    "pages/wode/orderDetail/orderDetail",
+    "pages/wode/order/order",
+    "pages/wode/index/index",
+    "pages/shouye/findDoctor/findDoctor",
+    "pages/shouye/myDoctor/myDoctor",
+    "pages/shouye/medicinal/medicinal",
+    "pages/shouye/disease/disease",
+    "pages/shouye/evaluation/evaluation",
+    "pages/shouye/doctors/doctors",
+    "pages/shouye/search/search",
+    "pages/gouwuche/index/index",
+    "pages/shangcheng/index/index",
+    "pages/shangcheng/cate/cate",
+    "pages/shouye/index/index",
+    
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "list":[
+        {
+          "pagePath":"pages/shouye/index/index",
+          "text":"首页",
+          "iconPath":"images/tabs/index.png",
+          "selectedIconPath":"images/tabs/index_active.png"
+        },
+        {
+          "pagePath": "pages/shangcheng/index/index",
+          "text": "商城",
+          "iconPath": "images/tabs/hypermarket.png",
+          "selectedIconPath": "images/tabs/hypermarket_active.png"
+        },
+        {
+          "pagePath": "pages/gouwuche/index/index",
+          "text": "购物车",
+          "iconPath": "images/tabs/cart.png",
+          "selectedIconPath": "images/tabs/cart_active.png"
+        },
+        {
+          "pagePath": "pages/wode/index/index",
+          "text": "我的",
+          "iconPath": "images/tabs/mine.png",
+          "selectedIconPath": "images/tabs/mine_active.png"
+        }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

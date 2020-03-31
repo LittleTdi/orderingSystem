@@ -1,0 +1,121 @@
+.container{
+  min-height:100vh;
+  width:100%;
+  padding:32rpx;
+  background:#F5F6F6;
+  box-sizing: border-box;
+}
+.container>view:first-child image{
+  width:37rpx;
+  height:34.8rpx;
+}
+.container>view:first-child view:first-child{
+  font-size: 16px;
+  color: rgba(17, 26, 44, 0.6);
+}
+.container>view:first-child view:last-child{
+  color:rgba(17, 26, 44, 0.9);
+  font-size: 16px;
+}
+.container>view:first-child{
+  width:100%;
+}
+.container .scroll-item{
+  padding:32rpx 40rpx;
+  margin-left:32rpx;
+  margin-right:32rpx;
+  background:#fff;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-top:40rpx;
+}
+.balance .scroll-item:last-child{
+  margin-bottom: 60rpx;
+}
+.scroll-item>view:first-child image{
+  width:96rpx;
+  height:96rpx;
+  margin-right:44rpx;
+}
+.sc.scroll-item>view:first-child view{
+  color:#111A2C;
+  font-size: 14px;
+}
+.scroll-item .count>image{
+  width:40rpx;
+  height:40rpx;
+}
+.scroll-item .spec>view:first-child{
+  color:#111A2C;
+  font-size:16px;
+  margin-bottom: 14rpx;
+}
+scroll-view{
+  position:absolute;
+  top:74rpx;
+  /* border:1px solid red; */
+  height:87%;
+  /* margin-bottom:80rpx; */
+}
+.container .bar{
+  padding:12rpx 32rpx;
+  width:686rpx;
+  background:#fff;
+  position: fixed;
+  bottom:32rpx;
+  left:32rpx;
+  border-radius: 32rpx;
+  border:1px solid #F2F3F3;
+}
+.container .bar button{
+  width:200rpx;
+  height:64rpx;
+  background:#4CAF50;
+  font-size: 16px;
+  line-height: 2;
+  color:#fff;
+  border-radius: 32rpx;
+}
+.bar>view:first-child>text:first-child{
+  font-size: 12px;
+}
+.bar>view:first-child>text:last-child{
+  font-size: 18px;
+}
+.blank{
+  color:rgba(17, 26, 44, 0.3);
+  font-size: 12px;
+  text-align: center;
+  margin-top:404rpx;
+}
+.checkbox{
+  margin-left:32rpx;
+}
+.checkbox .scroll-item{
+  width:612rpx;
+}
+.checkbox .scroll-item>view:first-child image{
+  margin-right:40rpx;
+}
+checkbox{
+  width:64rpx;
+  height:64rpx;
+  text-align: center;
+}
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input{
+  border-radius: 50%;
+  height:32rpx;
+  width:32rpx;
+  margin-top:16rpx;
+}
+/*checkbox选中后样式  */
+/* checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+} */
+.checkbox label{
+  height:160rpx;
+}
+checkbox-group label:last-child{
+  margin-bottom: 60rpx;
+}

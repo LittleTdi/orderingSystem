@@ -1,0 +1,54 @@
+<view class="container" wx:if="{{as.length>0}}">
+  <view class="d-flex flex-between">
+    <view>共12件</view>
+    <image wx:if="{{operate=='balance'}}" src="../../../images/rublish.png" bindtap="transform"></image>
+    <view wx:if="{{operate=='delete'}}" bindtap="transform">完成</view>
+  </view>
+  <scroll-view scroll-y="true" wx:if="{{operate=='balance'}}" class="balance">
+    <view class="scroll-item" wx:for="{{as}}" wx:key="index">
+      <view class="d-flex">
+        <image src="../../../images/goods/m1.png"></image>
+        <view>京制黄牛解毒片{{item.name}}</view>
+      </view>
+      <view class="spec">
+        <view>￥188.00</view>
+        <view class="d-flex count flex-between">
+          <image src="../../../images/reduce.png"></image>
+          <view>11</view>
+          <image src="../../../images/add.png"></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <scroll-view scroll-y="true" wx:if="{{operate=='delete'}}">
+    <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox d-flex" wx:for="{{as}}" wx:key="index">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}"/>
+        <view class="scroll-item">
+          <view class="d-flex">
+            <image src="../../../images/goods/m1.png"></image>
+            <view>京制黄牛解毒片{{item.name}}</view>
+          </view>
+          <view class="spec">
+            <view>￥188.00</view>
+            <view class="d-flex count flex-between">
+              <image src="../../../images/reduce.png"></image>
+              <view>11</view>
+              <image src="../../../images/add.png"></image>
+            </view>
+          </view>
+        </view>
+      </label>
+    </checkbox-group>
+  </scroll-view>
+  <view class="bar d-flex flex-between">
+    <view>
+      <text>{{operate=='balance'? '合计':'已选中'}}：</text>
+      <text>{{operate=='balance'? "￥236.00":"3件"}}</text>
+    </view>
+    <view>
+      <button>{{operate=='balance'? "结算":"移除"}}</button>
+    </view>
+  </view>
+</view>
+<view class="blank" wx:if="{{as.length==0}}">空空如也~</view>

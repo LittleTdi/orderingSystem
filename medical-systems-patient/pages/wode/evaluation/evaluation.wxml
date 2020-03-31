@@ -1,0 +1,51 @@
+<view class="order-evaluation">
+  <view class="padding-lr bg-white d-flex flex-between">
+    <view class="d-flex">
+      <image src="../../../images/goods/m1.png"></image>
+      <view style="margin-left:40rpx;">
+        <view class="text-md text-light">京制黄牛解毒片</view>
+        <!-- <view style="margin-top:18rpx;">
+          <text class="text-sm text-light" style="margin-right:20rpx;">已评分</text>
+          <image src="../../../images/star.png" class="star"></image>
+          <image src="../../../images/star.png" class="star"></image>
+          <image src="../../../images/star.png" class="star"></image>
+          <image src="../../../images/star.png" class="star"></image>
+          <image src="../../../images/star.png" class="star"></image>
+        </view> -->
+      </view>
+    </view>
+    <view class="text-sm" style="color:rgba(17, 26, 44, 0.3);">等3件商品</view>
+  </view>
+  <view class="bg-white">
+    <view class="text-lg">评价</view>
+    <textarea 
+      placeholder="写出你的感受吧~" 
+      maxlength="100" 
+      placeholder-style="color:rgba(17, 26, 44, 0.3);font-size:14px;">
+    </textarea>
+    <view style="color:rgba(17, 26, 44, 0.3);font-size:14px;" class="text-right">100字</view>
+  </view>
+  <view class="padding-lr bg-white">
+    <view class="d-flex">
+      <view class="text-light text-md">药品疗效</view>
+      <view style="padding-left:32rpx;">
+        <image src="../../../images/star.png" class="star"></image>
+        <image src="../../../images/star.png" class="star"></image>
+        <image src="../../../images/star.png" class="star"></image>
+        <image src="../../../images/star.png" class="star"></image>
+        <image src="../../../images/star.png" class="star"></image>
+      </view>
+    </view>
+    <view class="d-flex" style="margin-top:40rpx;">
+      <view class="text-light text-md">问诊服务</view>
+      <view style="padding-left:32rpx;">
+        <image src="../../../images/star_gray.png" class="star"></image>
+        <image src="../../../images/star_gray.png" class="star"></image>
+        <image src="../../../images/star_gray.png" class="star"></image>
+        <image src="../../../images/star_gray.png" class="star"></image>
+        <image src="../../../images/star_gray.png" class="star"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<button class="submit bg-green text-white text-lg">提交</button>

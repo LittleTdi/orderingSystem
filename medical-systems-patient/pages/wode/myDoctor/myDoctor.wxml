@@ -1,0 +1,47 @@
+<view class="my-private-doctor bg-white">
+  <view class="header d-flex flex-end">
+    <view style="margin-right:172rpx;">
+      <text class="text-lg">李建峰</text>
+      <text class="text-md" style="margin-left:16rpx;">口腔科</text>
+    </view>
+    <image src="../../../images/mine/sl.png" style="margin-right:52rpx;"></image>
+  </view>
+  <view class="body">
+    <scroll-view scroll-y="true" style="height:618rpx;">
+      <view class="talk d-flex flex-end align-start">
+        <view class="yao bg-white" style="margin-right:24rpx;"></view>
+        <image src="../../../images/goods/m1.png"></image>
+      </view>
+      <view class="doctor-say d-flex flex-start">
+        <image src="../../../images/goods/m1.png"></image>
+        <view class="text-md bg-white">使用剂量按说明书上的，一天三次</view>
+      </view>
+      <view class="ask d-flex flex-end">
+        <view class="text-md bg-white">好的，谢谢医生</view>
+        <image src="../../../images/goods/m1.png"></image>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="footer bg-white">
+    <view class="d-flex flex-between">
+      <image src="../../../images/mine/voice.png"></image>
+      <input></input>
+      <image src="../../../images/mine/think.png"></image>
+      <image src="../../../images/mine/more.png"></image>
+    </view>
+    <view class="d-flex">
+      <view>
+        <view>
+          <image src="../../../images/mine/photo.png"></image>
+        </view>
+        <view class="text-sm text-center" style="margin-top:8rpx;width:100%;">相册</view>
+      </view>
+      <view>
+        <view>
+          <image src="../../../images/mine/sc.png"></image>
+        </view>
+        <view class="text-sm text-center" style="margin-top:8rpx;width:100%;">我的收藏</view>
+      </view>
+    </view>
+  </view>
+</view>

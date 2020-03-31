@@ -1,0 +1,15 @@
+<view class="my-service-center">
+  <view class="dialog">
+    <view class="text-sm text-center time">上午 09:25</view>
+    <view class="content d-flex flex-start align-start">
+      <view class="text-white">医疗平台</view>
+      <view class="bg-white">
+        <view class="text-md">欢迎来到客服中心，有什么问题需要我来为你解答的吗？</view>
+        <view class="text-md">常见问题：</view>
+        <view class="text-md text-red">如何保证我的快递一般几天到？</view>
+        <view class="text-md text-red">药品是否是正品？</view>
+        <view class="text-md text-red">收到的商品与订单有误怎么办？</view>
+      </view>
+    </view>
+  </view>
+</view>

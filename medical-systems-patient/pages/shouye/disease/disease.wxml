@@ -1,0 +1,24 @@
+<view class="disease">
+  <view class="doctor" wx:for="{{as}}" wx:key="index">
+    <image src="../../../images/goods/m1.png"></image>
+    <view class="border-bottom">
+      <view>
+        <text class="text-lg text-bold">李剑锋</text>
+        <text class="text-md" style="margin-left:16rpx;">主治医师</text>
+      </view>
+      <view style="margin-top:12rpx;">
+        <text class="text-light text-md">呼吸科</text>
+        <text class="text-light text-md" style="margin-left:16rpx;">南方医科大学南方医院</text>
+      </view>
+      <view class="text-light text-sm ysjs" style="margin-top:20rpx;">擅长：肺炎、普通感冒、支气管炎、支气管扩张、
+支气管哮喘、慢性阻塞性肺疾病、肺癌、肺部{{item}}...</view>
+      <view class="d-flex flex-between align-end">
+        <view style="margin-top:12rpx;">
+          <view class="text-sm text-red">好评度：100%</view>
+          <view class="text-sm text-lighter" style="margin-top:12rpx;">咨询费:￥1.00-￥2.00</view>
+        </view>
+        <button class="text-white text-md">咨询</button>
+      </view>
+    </view>
+  </view>
+</view>

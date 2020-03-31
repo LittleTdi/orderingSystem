@@ -1,0 +1,26 @@
+.my-private-doctors image{
+  width:92rpx;
+  height:92rpx;
+  border-radius: 50%;
+  border:1px solid #ddd;
+  margin-right:24rpx;
+}
+.my-private-doctors>view{
+  background:#fff;
+}
+.my-private-doctors>view>view{
+  width:570rpx;
+  padding-top:20rpx;
+  padding-bottom:18rpx;
+}
+.my-private-doctors>view>view>view:last-child>view:first-child{
+  color:rgba(17, 26, 44, 0.3);
+  font-size: 10px;
+}
+.tag{
+  position: relative;
+  right:-60rpx;
+}
+page{
+  background:#fff;
+}

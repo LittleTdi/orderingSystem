@@ -1,0 +1,18 @@
+.rdpj{
+  padding:0 32rpx;
+}
+.rdpj>view{
+  padding:52rpx 0;
+}
+.star{
+  width:32rpx;
+  height:32rpx;
+}
+.star+.star{
+  margin-left:4rpx;
+}
+.evaluation{
+  background:#F5F6F6;
+  width:100%;
+  height:100%;
+}

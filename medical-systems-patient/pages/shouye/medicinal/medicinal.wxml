@@ -1,0 +1,14 @@
+<view class="medicinal">
+  <view class="d-flex" wx:for="{{as}}" wx:key="index">
+    <image src="../../../images/goods/m1.png"></image>
+    <view>
+      <view class="text-md" style="margin-bottom:50rpx;">博苏 富马酸比索洛尔片{{item}}</view>
+      <view class="d-flex flex-between">
+        <view class="text-red text-md">￥21</view>
+        <view class="cart text-center">
+          <image src="../../../images/cart/cart.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

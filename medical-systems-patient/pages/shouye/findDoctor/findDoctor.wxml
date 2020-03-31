@@ -1,0 +1,11 @@
+<view>
+  <view wx:for="{{department}}" wx:key="index">
+    <view class="padding-lr d-flex flex-between" style="height:88rpx;" data-i="{{index}}" bindtap="change">
+      <view class="text-xl">{{item.name}}</view>
+      <image src="{{item.expanded==false? img[0]:img[1]}}" class="to"></image>
+    </view>
+    <view class="padding-lr department" wx:if="{{item.expanded==true}}">
+      <view class="department-item text-md text-center" wx:for="{{item.children}}" wx:key="index">{{item}}</view>
+    </view>
+  </view>
+</view>

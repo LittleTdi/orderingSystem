@@ -1,0 +1,23 @@
+<view class="search">
+  <view class="inp-search">
+    <input placeholder="搜索 疾病、医生" style="background-image:url('../../../images/shouye/search.png')"></input>
+  </view>
+  <view class="rmss">热门搜索</view>
+  <view class="d-flex flex-between">
+    <view>
+      <button>新型肺炎</button>
+    </view>
+    <view>
+      <button>感冒</button>
+    </view>
+    <view>
+      <button>咳嗽</button>
+    </view>
+    <view>
+      <button>发烧</button>
+    </view>
+    <view>
+      <button>双黄连</button>
+    </view> 
+  </view>
+</view>

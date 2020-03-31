@@ -1,0 +1,114 @@
+page{
+  background:#F5F6F6;
+}
+.order-detail-header{
+  height:136rpx;
+}
+.order-detail-header .d-flex.flex-between{
+  height:100%;
+}
+.order-detail-header .d-flex.flex-between>image{
+  width:12rpx;
+  height:24rpx;
+}
+.order-detail-header .d-flex.flex-between>view image{
+  width:56rpx;
+  height:56rpx;
+}
+.order-detail-product{
+  margin-top:20rpx;
+}
+.order-detail-product-content>view{
+  height:160rpx;
+}
+.order-detail-product-content image{
+  width:96rpx;
+  height:96rpx;
+  margin-right:44rpx;
+}
+.order-detail-amount{
+  margin-top:20rpx;
+  padding-top:24rpx;
+  padding-bottom:24rpx;
+}
+.order-detail-amount>view{
+  padding-bottom:20rpx;
+}
+.order-detail-amount>view:last-child{
+  padding-top:20rpx;
+  padding-bottom: 0;
+}
+.order-info{
+  padding-top:24rpx;
+  padding-bottom:32rpx;
+  margin-top:20rpx;
+}
+.order-info>view{
+  padding-bottom:20rpx;
+}
+.order-info>view:last-child{
+  padding-bottom: 0;
+  height:88rpx;
+  border-radius: 64rpx;
+  width:686rpx;
+  text-align: right;
+  margin-top:40rpx;
+}
+.pay{
+  box-shadow:0px 2px 8px rgba(0,0,0,0.08);
+  padding:0 32rpx;
+}
+.order-info button{
+  width:200rpx;
+  height:64rpx;
+  border-radius: 32rpx;
+  line-height: 2;
+}
+.yaxis{
+  width:4rpx;
+  height:72rpx;
+  background:rgba(17,26,44,0.3);
+  opacity:1;
+  border-radius:4rpx;
+  margin:4rpx 0;
+}
+.yaxis-active{
+  background:#4CAF50;
+}
+.step-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left:108rpx;
+  padding-top:86rpx;
+  padding-bottom: 86rpx;
+  height:792rpx;
+  box-sizing: border-box;
+}
+.step-right{
+  height:792rpx;
+  padding-top:64rpx;
+  padding-bottom: 74rpx;
+  margin-left:6rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.step-right>view>view:first-child{
+  margin-top:34rpx;
+  padding:0 20rpx 0 34rpx;
+}
+.step-right>view:first-child>view:first-child{
+  margin-top:0;
+}
+.step-bg-active{
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  color:#fff;
+  line-height: 2;
+  height:66rpx;
+}
+.ing{
+  margin-bottom:-10rpx;
+}

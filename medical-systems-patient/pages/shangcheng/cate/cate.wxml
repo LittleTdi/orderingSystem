@@ -1,0 +1,44 @@
+<view class="VerticalBox">
+  <scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{VerticalNavTop}}" style="height:calc(100vh)">
+    <view class="cu-item {{index==TabCur? 'cur':''}}" wx:for="{{list}}" wx:key="index" bindtap='tabSelect' data-id="{{index}}">
+      Tab-{{item.name}}
+    </view>
+  </scroll-view>
+  <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh)" scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+    <view class="padding-top padding-lr" wx:for="{{list}}" wx:key="index" id="main-{{index}}">
+      <view class='cu-bar solid-bottom bg-white'>
+        <view class='action'>
+          Tab-{{item.name}} 
+        </view>
+        <image src="../../../images/mine/to.png"></image>
+      </view>
+      <view class="cu-list menu-avatar">
+        <view class="m-item">
+          <view>
+            <image src="../../../images/goods/m1.png"></image>
+          </view>
+          <view>脑血栓</view>
+        </view>
+        <view class="m-item">
+          <view>
+            <image src="../../../images/goods/m2.png"></image>
+          </view>
+          <view>脑血栓</view>
+        </view>
+        <view class="m-item">
+          <view>
+            <image src="../../../images/goods/m3.png"></image>
+          </view>
+          <view>脑血栓</view>
+        </view>
+        <view class="m-item">
+          <view>
+            <image src="../../../images/goods/m4.png"></image>
+          </view>
+          <view>脑血栓</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+

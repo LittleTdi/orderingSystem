@@ -1,0 +1,65 @@
+.shouye-doctor{
+  background:#F5F6F6;
+  width:100%;
+  height:100%;
+}
+.doctor-basic{
+  padding:32rpx;
+  background:#fff;
+  display:flex;
+  /* justify-content: baseline; */
+}
+.doctor-basic>image{
+  width:172rpx;
+  height:172rpx;
+  border-radius:50%;
+  border:1px solid #f2f2f2;
+}
+.jianjie,.lingyu{
+  padding:24rpx 32rpx;
+  background:#fff;
+}
+.padding-sxzy{
+  padding:24rpx 32rpx;
+}
+/* 间隔空隙 */
+.mt-jg{
+  margin-top:20rpx;
+}
+.hpd{
+  width:278rpx;
+  height:66rpx;
+  background:rgba(17,26,44,0.04);
+  opacity:1;
+  border-radius:34rpx;
+  padding:12rpx 32rpx;
+}
+.hzpj{
+  padding:24rpx 32rpx;
+}
+.rdpj{
+  padding:0 32rpx;
+}
+.rdpj>view{
+  padding:52rpx 0;
+}
+.star{
+  width:32rpx;
+  height:32rpx;
+}
+.star+.star{
+  margin-left:4rpx;
+}
+.shouye-doctor>view:last-child view{
+  width:342rpx;
+  height:104rpx;
+  padding-top:32rpx;
+}
+.shouye-doctor>view:last-child view:first-child{
+  border-radius: 16px  0px   0px  16px;
+  background:rgba(76, 175, 80, 0.8);
+}
+.shouye-doctor>view:last-child view:last-child{
+  background:#4CAF50;
+  border-radius:0px 16px 16px 0px;
+}

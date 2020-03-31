@@ -1,0 +1,147 @@
+.inp-search{
+  width:100%;
+  padding:20rpx 32rpx;
+  padding-left:32rpx;
+  padding-right:32rpx;
+}
+.inp-search>input{
+  height:72rpx;
+  border-radius:36rpx;
+  background-color:#fff;
+  margin:0 32rpx;
+  padding-left:84rpx;
+  font-size:14px;
+  color:#B0B4B9;
+  background-repeat: no-repeat;
+  background-position: 32rpx 20rpx;
+}
+.banner image{
+  width:100%;
+  height:300rpx;
+  z-index:9;
+}
+swiper{
+  width:100%;
+  height:300rpx;
+}
+.banner{
+  height:300rpx;
+  width:100vw;
+}
+.jgg{
+  padding-top:50rpx;
+  /* padding-bottom:50rpx; */
+  background:#fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.jgg-item>view{
+  text-align: center;
+}
+.jgg-item>view:first-child{
+  width:120rpx;
+  height:120rpx;
+  border-radius:50%;
+  margin-bottom:12rpx;
+}
+.jgg-item image{
+  width:120rpx;
+  height:120rpx;
+}
+.jgg-item:last-child image{
+  width:56rpx;
+  height:56rpx;
+  margin-top:32rpx;
+}
+.jgg-item{
+  margin-left:20rpx;
+  margin-bottom:32rpx;
+}
+.jgg-item:nth-child(5n-4){
+  margin-left:0;
+}
+.cyyw{
+  width:100%;
+  padding-top:48rpx;
+  background:#fff;
+}
+.cyyw view{
+  font-size:18px;
+}
+.scroll-item{
+  width:220rpx;
+  height:346rpx;
+  padding:10rpx;
+  display: inline-block;
+}
+.scroll-item image{
+  width:180rpx;
+  height:180rpx;
+}
+.scroll-item>view{
+  width:176rpx;
+  margin:12rpx auto 0 auto;
+}
+.scroll-item>view:last-child{
+  font-size: 14px;
+  color:#FF5757;
+}
+.scroll-item>view:nth-child(2){
+  font-size: 12px;
+  width:176rpx;
+  text-align: left;
+  /* word-wrap:break-word; */
+  word-break: break-all;
+  -webkit-line-clamp: 2;
+}
+.scroll-content{
+  box-sizing: border-box;
+  padding-top:20rpx;
+  background:#fff;
+  height:346rpx;
+}
+.jxtj{
+  padding-top:60rpx;
+  background:#fff;
+  width:100%;
+}
+.jxtj>.title{
+  font-size:18px;
+  text-align: left;
+  width:100%;
+}
+.tj-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.tj-item{
+  padding:20rpx 0;
+  width:320rpx;
+}
+.tj-item>view:first-child>image{
+  width:320rpx;
+  height:300rpx;
+}
+.tj-item>view:nth-child(2){
+  font-size: 12px;
+  padding:16rpx 0 12rpx 0;
+}
+.tj-item>view:last-child>view{
+  color:#FF5757;
+  font-size: 14px;
+}
+.tj-item>view:last-child image{
+  width:32rpx;
+  height:32rpx;
+  margin-top:12rpx;
+}
+.tj-item>view:last-child>view:last-child{
+  background:#FF5757;
+  width:56rpx;
+  height:56rpx;
+  border-radius: 50%;
+  text-align: center;
+}
+.tj-item:nth-child(2n-1){
+  margin-right:46rpx;
+}

@@ -1,0 +1,67 @@
+<view class="container">
+  <view class="inp-search">
+    <input placeholder="搜索 疾病、医生" style="background-image:url('../../../images/shouye/search.png')"></input>
+  </view>
+  <view class="banner">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+      indicator-color="rgb(255,255,255)"
+      indicator-active-color="#4CAF50">
+      <block wx:for="{{banner}}" wx:key="index">
+        <swiper-item>
+            <image mode="widthFix" src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="content">
+    <view class="content-item">
+      <view class="content-item-content">
+        <image src="../../../images/shouye/kstw.png"></image>
+        <view>快速提问</view>
+      </view>
+      <image src="../../../images/mine/to.png"></image>
+    </view>
+    <view class="content-item">
+      <view class="content-item-content">
+        <image src="../../../images/shouye/zys.png"></image>
+        <view>找医生</view>
+      </view>
+      <image src="../../../images/mine/to.png"></image>
+    </view>
+  </view>
+  <view class="my-doctor">
+    <view>我的私人医生</view>
+    <view class="d-flex">
+      <view class="weui-badge" style="margin-left: 5px;">8</view>
+      <image src="../../../images/mine/to.png"></image>
+    </view>
+    
+  </view>
+  <view class="doctors">
+    <view class="doctors-item">
+      <view class="doctor-avatar"></view>
+      <view class="doctor-include">
+        <view>
+          <text class="text-name">唐名</text>
+          <text class="text-md dml-1">主治医师</text>
+        </view>
+        <view class="d-mt-1">
+          <text class="text-md">口腔科</text> 
+          <text class="text-md dml-1">广东省人民医院</text>
+        </view>
+        <view class="d-detail d-mt-1">擅长：金陵饭店说服力让挤公交，看后感我建瓯盘杜鹃坡喝坡多斯拉克发链接。</view>
+        <view class="doctor-p">
+          <view class="d-mt-1">
+            <view> 好评度：90%。</view>
+            <view class="d-mt-1">咨询费：￥1.00-￥2.00</view>
+          </view>
+          <button class="btn-zx">咨询</button>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="news">
+    最新消息：2月10日新增新冠肺炎患者出院病例7...
+  </view>
+</view>

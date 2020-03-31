@@ -1,0 +1,20 @@
+<view class="evaluation">
+  <view class="rdpj bg-white">
+    <view class="border-bottom" wx:for="{{as}}" wx:key="index">
+      <view class="d-flex flex-between"style="margin-bottom:20rpx;" >
+        <view class="d-flex">
+          <view class="text-md text-bold" style="margin-right:16rpx;">sdegthbc</view>
+          <view>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+          </view>
+        </view>
+        <view class="text-light text-sm">1月26日</view>
+      </view>
+      <view class="text-md">每次问诊医生都很有耐心，问题回答的也很有条理性，而且为患者着想，真的特别谢谢您！{{item}}</view>
+    </view>
+  </view>
+</view>

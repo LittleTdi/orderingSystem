@@ -1,0 +1,132 @@
+<view class="order">
+  <view class="inp-search">
+    <input placeholder="搜索 订单" style="background-image:url('../../../images/shouye/search.png')"></input>
+  </view>
+  <view class="nav padding-lr d-flex flex-between">
+    <view class="nav-item active">全部</view>
+    <view class="nav-item">待付款</view>
+    <view class="nav-item">待发货</view>
+    <view class="nav-item">待收货</view>
+    <view class="nav-item">待评价</view>
+  </view>
+  <view class="order-content padding-lr">
+    <view wx:if="{{data.length>0}}">
+      <view class="d-flex flex-between">
+        <view class="d-flex">
+          <image src="../../../images/goods/m1.png"></image>
+          <view class="text-light text-md" style="margin-left:40rpx;">京制黄牛解毒片</view>
+        </view>
+        <view class="text-md">￥88.00</view>
+      </view>
+      <view class="d-flex flex-between align-end">
+        <view bindtap="openDialog" style="padding:6rpx 0;">
+            <image src="../../../images/rublish.png" 
+            style="width:28rpx;height:26.34rpx;">
+            </image>
+        </view>
+        <view class="d-flex flex-end" style="margin-top:40rpx;">
+          <view class="text-sm text-lighter"style="margin-right:32rpx;" >已完成</view>
+          <view class="text-sm text-green text-center" style="margin-right:20rpx;" bindtap="openInfo">查看物流</view>
+          <view class="text-sm text-green text-center">评价</view>
+        </view>
+      </view>
+      
+    </view>
+    <view class="text-sm text-center blank" wx:if="{{data.length==0}}">
+      <text>您还没有相关订单\n赶紧去添加吧~
+      </text>
+    </view>
+  </view>
+</view>
+
+<view class="weui-demo-dialog weui-demo-dialog_show" wx:if="{{istrue==true}}">
+  <view class="weui-mask" bindtap="closeDialog"></view>
+  <view class="weui-dialog__wrp" bindtap="closeDialog">
+      <view class="weui-dialog" catchtap="stopEvent">
+        <view class="weui-dialog__hd">
+          <view class="weui-dialog__title">标题</view>
+        </view>
+        <view class="weui-dialog__bd text-lg">
+          <view>是否将该订单删除</view>
+          <view>如删除就无法在找回。</view>
+        </view>
+        <view class="weui-dialog__ft">
+            <view class="weui-dialog__btn weui-dialog__btn_default text-lg text-green" bindtap="closeDialog">取消</view>
+            <view class="weui-dialog__btn text-lg text-light" bindtap="closeDialog">确定</view>
+        </view>
+      </view>
+  </view>
+</view>
+
+<view class="weui-demo-dialog weui-demo-dialog_show" wx:if="{{isShow==true}}">
+  <view class="weui-mask" bindtap="closeInfo"></view>
+  <view class="weui-actionsheet weui-actionsheet_toggle" style="border-radius:0;" catchtap="stopEvent">
+      <view style="background:#fff;padding-top:40rpx;" class="text-center text-lg">
+        物流详情
+      </view>
+      <view class="d-flex bg-white">
+          <view class="step-left">
+            <view class="dot-active"></view>
+            <view class="yaxis"></view>
+            <view class="dot"></view>
+            <view class="yaxis"></view>
+            <view class="dot"></view>
+            <view class="yaxis"></view>
+            <view class="dot"></view>
+            <view class="yaxis"></view>
+            <view class="dot"></view>
+            <view class="yaxis"></view>
+            <view class="dot"></view>
+            <view class="yaxis"></view>
+            <view class="dot"></view>
+          </view>
+          <view class="step-right">
+            <view class="d-flex ing">
+              <view class="step-bg-active text-lg" style="background-image:url('../../../images/dialog.png')">
+                订单提交成功
+              </view>
+              <view class="text-sm text-lighter" style="margin-left:4rpx;">2020-01-15 14:50:39</view>
+            </view>
+            <view class="d-flex">
+              <view class="text-lighter text-lg">
+                待付款
+              </view>
+              <!-- <view class="text-sm text-lighter">2020-01-15 14:50:39</view> -->
+            </view>
+            <view class="d-flex">
+              <view class="text-lighter text-lg">
+                已付款
+              </view>
+              <view class="text-sm text-lighter"></view>
+            </view>
+            <view class="d-flex">
+              <view class="text-lighter text-lg">
+                待发货
+              </view>
+              <view class="text-sm text-lighter"></view>
+            </view>
+            <view class="d-flex">
+              <view class="text-lighter text-lg">
+                待收货
+              </view>
+              <view class="text-sm text-lighter"></view>
+            </view>
+            <view>
+              <view class="d-flex">
+                <view class="text-lighter text-lg">
+                  确认收货
+                </view>
+                <view class="text-sm text-lighter"></view>
+              </view>
+              <!-- <view class="text-sm text-light">您的订单由本人签收，如有疑问请联系客服</view> -->
+            </view>
+            <view class="d-flex">
+              <view class="text-lighter text-lg">
+                已完成
+              </view>
+              <view class="text-sm text-lighter"></view>
+            </view>
+          </view>
+      </view>
+  </view>
+</view>

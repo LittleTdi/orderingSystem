@@ -1,0 +1,43 @@
+page{
+  background:#F8F8F8;
+}
+.order-evaluation>view{
+  margin-bottom: 20rpx;
+}
+.order-evaluation>view:first-child,.order-evaluation>view:nth-child(3){
+  padding-top:40rpx;
+  padding-bottom:40rpx;
+}
+.order-evaluation>view:first-child{
+  height:176rpx;
+}
+.order-evaluation>view:first-child image{
+  width:96rpx;
+  height:96rpx;
+}
+.order-evaluation>view:nth-child(2){
+  height:426rpx;
+  padding:24rpx 32rpx;
+}
+.order-evaluation>view:nth-child(2) textarea{
+  margin-top:24rpx;
+  height:274rpx;
+}
+.order-evaluation>view:nth-child(3){
+  height:196rpx;
+}
+.order-evaluation .star{
+  margin-right:12rpx;
+}
+.submit{
+  position: absolute;
+  bottom:32rpx;
+  left:32rpx;
+  width:686rpx;
+  height:96rpx;
+  border-radius: 32rpx;
+}
+.order-evaluation>view:first-child .star{
+  width:32rpx;
+  height:32rpx;
+}

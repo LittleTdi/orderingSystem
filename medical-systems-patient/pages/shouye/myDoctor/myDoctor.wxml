@@ -1,0 +1,21 @@
+<view wx:if="{{data.length==0}}" class="blank text-center text-sm">
+  还未添加我的私人医生~
+</view>
+
+<view wx:if="{{data.length>0}}" class="my-private-doctors">
+  <view class="padding-lr d-flex" wx:for="{{data}}">
+    <image src="../../../images/goods/m1.png"></image>
+    <view class="d-flex flex-between border-bottom">
+      <view>
+        <view>
+          <text class="text-lg text-bold" style="margin-right:16rpx;">唐名</text><text class="text-md">呼吸科</text> 
+        </view>
+        <view class="text-sm text-lighter" style="margin-top:6rpx;">你应该是着凉了，普通感冒，不严重。{{item}}</view>
+      </view>
+      <view>
+        <view style="margin-bottom:20rpx;">上午08:00</view>
+        <view class="tag">15</view>
+      </view>
+    </view>
+  </view>
+</view>

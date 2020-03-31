@@ -1,0 +1,182 @@
+<view class="order-detail">
+  <view class="padding-lr bg-white order-detail-header">
+    <view class="d-flex flex-between border-bottom">
+      <view class="d-flex">
+        <image src="../../../images/mine/car.png" style="margin-right:40rpx;"></image>
+        <view>
+          <view class="text-md text-light">物流详情</view>
+          <view class="d-flex" style="margin-top:12rpx;">
+            <view class="dot-active"></view>
+            <view class="text-md text-light" style="margin-left:16rpx;">待收货</view>
+          </view>
+        </view>
+      </view>
+      <image src="../../../images/mine/to.png"></image>
+    </view>
+  </view>
+  <view class="padding-lr bg-white order-detail-header">
+    <view class="d-flex flex-between" bindtap="openInfo">
+      <view class="d-flex">
+        <image src="../../../images/mine/address.png" style="margin-right:40rpx;"></image>
+        <view>
+          <view class="text-md text-light">
+            <text>王大鹏</text> 
+            <text class="margin-left:24rpx;">156****2326</text>
+          </view>
+          <view class="d-flex" style="margin-top:20rpx;">
+            广东省深圳市福田三路荣超商务中心B座
+          </view>
+        </view>
+      </view>
+      <image src="../../../images/mine/to.png"></image>
+    </view>
+  </view>
+  <view class="order-detail-product padding-lr bg-white">
+    <view style="height:88rpx;padding:24rpx 0;" class="text-md text-light">订单详情</view>
+    <view class="order-detail-product-content">
+      <view class="d-flex flex-between align-start">
+        <view class="d-flex">
+          <image src="../../../images/goods/m1.png"></image>
+          <view>
+            <view class="text-md text-light">京制黄牛解毒片</view>
+            <view class="text-sm text-lighter" style="margin-top:10rpx;">x1</view>
+          </view>
+        </view>
+        <view class="text-lg text-light">￥88.00</view>
+      </view>
+    </view>
+  </view>
+  <view class="order-detail-amount padding-lr bg-white">
+    <view class="d-flex flex-between">
+      <view class="text-md text-light">订单金额</view>
+      <view class="text-md text-light">￥528.00</view>
+    </view>
+    <view class="d-flex flex-between">
+      <view class="text-md text-light">订单数量</view>
+      <view class="text-md text-light">共1件</view>
+    </view>
+    <view class="d-flex flex-between border-bottom">
+      <view class="text-md text-light">运费</view>
+      <view class="text-md text-light">￥8.00</view>
+    </view>
+    <view class="d-flex flex-between">
+      <view class="text-md text-light">实付费(含运费)</view>
+      <view class="text-md text-bold">￥536.00</view>
+    </view>
+  </view>
+  <view class="order-info padding-lr bg-white">
+    <view class="text-md text-light">订单信息</view>
+    <view class="d-flex flex-between">
+      <view class="d-flex">
+        <view class="text-sm text-lighter">订单编号：</view>
+        <view class="text-sm text-light" style="margin-left:40rpx;">865475215021</view>
+      </view>
+      <view class="text-sm text-lighter"  bindtap='copyText' data-text="{{contents}}">复制</view>
+    </view>
+    <view class="d-flex">
+      <view class="text-sm text-lighter">下单时间：</view>
+      <view class="text-sm text-light" style="margin-left:40rpx;">
+        <text>2020-01-15</text>
+        <text style="margin-left:24rpx;">14:50:39</text>
+      </view>
+    </view>
+    <view class="d-flex">
+      <view class="text-sm text-lighter">支付方式：</view>
+      <view class="text-sm text-light" style="margin-left:40rpx;">
+        微信支付
+      </view>
+    </view>
+    <view class="d-flex">
+      <view class="text-sm text-lighter">支付时间：</view>
+      <view class="text-sm text-light" style="margin-left:40rpx;">
+        <text>2020-01-15</text>
+        <text style="margin-left:24rpx;">14:50:39</text>
+      </view>
+    </view>
+    <view class="d-flex flex-between pay">
+      <view>
+        <text class="text-sm">总计：</text>
+        <text class="text-lg">￥536.00</text>
+      </view>
+      <view class="text-right">
+        <button class="text-center text-white bg-green text-lg">继续支付</button>
+      </view>
+    </view>
+    <!-- <view class="text-right">
+      <button class="text-center text-white bg-green text-lg">继续支付</button>
+    </view> -->
+  </view>
+</view>
+<!-- 物流详情 -->
+<view class="weui-demo-dialog weui-demo-dialog_show" wx:if="{{isShow==true}}">
+  <view class="weui-mask" bindtap="closeInfo"></view>
+  <view class="weui-actionsheet weui-actionsheet_toggle" style="border-radius:0;" catchtap="stopEvent">
+      <view style="background:#fff;padding-top:40rpx;" class="text-center text-lg">
+        物流详情
+      </view>
+      <view class="d-flex bg-white">
+          <view class="step-left">
+            <view class="dot-active"></view>
+            <view class="yaxis"></view>
+            <view class="dot"></view>
+            <view class="yaxis"></view>
+            <view class="dot"></view>
+            <view class="yaxis"></view>
+            <view class="dot"></view>
+            <view class="yaxis"></view>
+            <view class="dot"></view>
+            <view class="yaxis"></view>
+            <view class="dot"></view>
+            <view class="yaxis"></view>
+            <view class="dot"></view>
+          </view>
+          <view class="step-right">
+            <view class="d-flex ing">
+              <view class="step-bg-active text-lg" style="background-image:url('../../../images/dialog.png')">
+                订单提交成功
+              </view>
+              <view class="text-sm text-lighter" style="margin-left:4rpx;">2020-01-15 14:50:39</view>
+            </view>
+            <view class="d-flex">
+              <view class="text-lighter text-lg">
+                待付款
+              </view>
+              <!-- <view class="text-sm text-lighter">2020-01-15 14:50:39</view> -->
+            </view>
+            <view class="d-flex">
+              <view class="text-lighter text-lg">
+                已付款
+              </view>
+              <view class="text-sm text-lighter"></view>
+            </view>
+            <view class="d-flex">
+              <view class="text-lighter text-lg">
+                待发货
+              </view>
+              <view class="text-sm text-lighter"></view>
+            </view>
+            <view class="d-flex">
+              <view class="text-lighter text-lg">
+                待收货
+              </view>
+              <view class="text-sm text-lighter"></view>
+            </view>
+            <view>
+              <view class="d-flex">
+                <view class="text-lighter text-lg">
+                  确认收货
+                </view>
+                <view class="text-sm text-lighter"></view>
+              </view>
+              <!-- <view class="text-sm text-light">您的订单由本人签收，如有疑问请联系客服</view> -->
+            </view>
+            <view class="d-flex">
+              <view class="text-lighter text-lg">
+                已完成
+              </view>
+              <view class="text-sm text-lighter"></view>
+            </view>
+          </view>
+      </view>
+  </view>
+</view>

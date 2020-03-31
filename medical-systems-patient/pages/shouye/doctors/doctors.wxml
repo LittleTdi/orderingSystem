@@ -1,0 +1,87 @@
+<view class="shouye-doctor">
+  <view class="doctor-basic">
+    <image src="../../../images/goods/m1.png"></image>
+    <view style="padding:12rpx 48rpx 12rpx 32rpx;">
+      <view class="text-xl text-bold">李剑锋</view>
+      <view>
+        <text class="text-md text-light">呼吸科</text>
+        <text class="text-md text-dark">主治医师</text>
+      </view>
+      <view class="text-md text-light">南方医科大学南方医院</view>
+    </view>
+    <view style="padding-top:12rpx;">
+      <view class="text-red text-sm text-right">咨询费:</view>
+      <view class="text-red text-sm text-right">￥1.00-￥2.00</view>
+    </view>
+  </view>
+  <view class="padding-sxzy bg-white border-bottom mt-jg">
+    <view class="text-lg">个人简介</view>
+    <view style="margin-top:16rpx;" class="text-md">从业6年。呼吸内科硕士研究生毕业，擅长发热，咳嗽咳痰及呼吸系统慢性疾病诊疗</view>
+  </view>
+  <view class="padding-sxzy bg-white">
+    <view class="text-lg">擅长领域</view>
+    <view style="margin-top:16rpx;" class="text-md">肺炎、普通感冒、支气管炎、支气管扩张、支气管哮喘
+、慢性阻塞性肺疾病、肺癌、肺部感染</view>
+  </view>
+  <view class="padding-sxzy bg-white mt-jg">
+    <view  class="hpd text-lg text-light">好评度：100%</view>
+  </view>
+  <view class="hzpj d-flex flex-between bg-white mt-jg border-bottom">
+    <view class="text-lg">患者评价</view>
+    <image class="to" src="../../../images/mine/to.png"></image>
+  </view>
+  <view class="rdpj bg-white">
+    <view class="border-bottom">
+      <view class="d-flex flex-between"style="margin-bottom:20rpx;" >
+        <view class="d-flex">
+          <view class="text-md text-bold" style="margin-right:16rpx;">sdegthbc</view>
+          <view>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+          </view>
+        </view>
+        <view class="text-light text-sm">1月26日</view>
+      </view>
+      <view class="text-md">每次问诊医生都很有耐心，问题回答的也很有条理性，而且为患者着想，真的特别谢谢您！</view>
+    </view>
+    <view class="border-bottom">
+      <view class="d-flex flex-between"style="margin-bottom:20rpx;" >
+        <view class="d-flex">
+          <view class="text-md text-bold" style="margin-right:16rpx;">sdegthbc</view>
+          <view>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+          </view>
+        </view>
+        <view class="text-light text-sm">1月26日</view>
+      </view>
+      <view class="text-md">每次问诊医生都很有耐心，问题回答的也很有条理性，而且为患者着想，真的特别谢谢您！</view>
+    </view>
+    <view class="border-bottom">
+      <view class="d-flex flex-between"style="margin-bottom:20rpx;" >
+        <view class="d-flex">
+          <view class="text-md text-bold" style="margin-right:16rpx;">sdegthbc</view>
+          <view>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+            <image src="../../../images/star.png" class="star"></image>
+          </view>
+        </view>
+        <view class="text-light text-sm">1月26日</view>
+      </view>
+      <view class="text-md">每次问诊医生都很有耐心，问题回答的也很有条理性，而且为患者着想，真的特别谢谢您！</view>
+    </view>
+  </view>
+  <view style="padding:76rpx 32rpx 32rpx 32rpx;" class="bg-white d-flex">
+    <view class="text-white text-lg text-center">添加到私人医生</view>
+    <view class="text-white text-lg text-center">咨询医生</view>
+  </view>
+</view>

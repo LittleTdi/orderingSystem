@@ -1,0 +1,88 @@
+.my-private-doctor{
+  padding-top:24rpx;
+  position: relative;
+}
+.my-private-doctor .header{
+  height:88rpx;
+  background:#fff;
+  z-index: 999;
+}
+.my-private-doctor .header image{
+  width:36rpx;
+  height:44rpx;
+}
+.my-private-doctor .body{
+  /* position:absolute;
+  top:112rpx; */
+  height:618rpx;
+  z-index: 1;
+  padding:0 32rpx;
+  background:#F8F8F8;
+}
+.my-private-doctor .body scroll-view{
+  background:#F8F8F8;
+}
+.my-private-doctor .body .yao{
+  width:494.56rpx;
+  height:508rpx;
+  border-radius:0px 32rpx 32rpx 32rpx;
+}
+.my-private-doctor .body image{
+  width:72rpx;
+  height:72rpx;
+  border-radius: 50%;
+  border:1px solid #aaa;
+}
+.my-private-doctor .body .talk{
+  margin-bottom:40rpx;
+}
+.my-private-doctor .body .doctor-say>view{
+  padding:24rpx;
+  margin:0 0 40rpx 24rpx;
+  border-radius:0rpx 32rpx 32rpx 32rpx;
+  height:88rpx;
+}
+.my-private-doctor .body .ask>view{
+  border-radius: 32rpx 0rpx 32rpx 32rpx;
+  height:88rpx;
+  padding:24rpx;
+  margin:0 24rpx 40rpx 0;
+}
+.my-private-doctor .footer{
+  height:500rpx;
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  width:100vw;
+  padding:0 32rpx;
+}
+.my-private-doctor .footer>view:first-child{
+  height:88rpx;
+  background:#fff;
+}
+.my-private-doctor .footer>view:first-child image{
+  height:48rpx;
+  width:48rpx;
+}
+.my-private-doctor .footer>view:first-child>input{
+  width:506rpx;
+  height:64rpx;
+  background:rgba(17,26,44,0.04);
+  border-radius: 42rpx;
+}
+.my-private-doctor .footer>view:last-child>view>view:first-child{
+  height:112rpx;
+  width:112rpx;
+  border-radius: 12rpx;
+  background:rgba(17,26,44,0.04);
+  text-align: center;
+  padding:20rpx;
+}
+.my-private-doctor .footer>view:last-child image{
+  width:72rpx;
+  height:72rpx;
+}
+.my-private-doctor .footer>view:last-child>view{
+  width:112rpx;
+  margin:40rpx 12rpx 0 40rpx;
+}

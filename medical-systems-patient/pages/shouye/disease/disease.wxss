@@ -1,0 +1,34 @@
+.disease .doctor{
+  padding:0 32rpx;
+  background:#fff;
+  display: flex;
+}
+.disease .doctor image{
+  width:112rpx;
+  height:112rpx;
+  border-radius: 50%;
+  /* margin-right:24rpx; */
+  margin-top:32rpx;
+  border:1px solid #f2f2f2;
+}
+.disease .doctor button{
+  width:176rpx;
+  height:54rpx;
+  background:rgba(76,175,80,1);
+  opacity:1;
+  border-radius:50rpx;
+  line-height: 2;
+}
+.disease .doctor>view{
+  width:550rpx;
+  padding:36rpx 0 32rpx 24rpx;
+}
+.disease .doctor .ysjs{
+  text-overflow: -o-ellipsis-lastline;/*css3中webkit内核提供的一个方法类似ellipsis*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;/*自适应盒子*/
+  -webkit-line-clamp: 2;/*此处为1行,如果是两行就改成2*/
+  -webkit-box-orient: vertical;
+  word-break: break-all;/*允许在单词内换行 */
+}

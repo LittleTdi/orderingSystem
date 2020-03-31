@@ -1,0 +1,55 @@
+<view class="container">
+  <view class="inp-search">
+    <input placeholder="搜索 疾病、医生" style="background-image:url('../../../images/shouye/search.png')"></input>
+  </view>
+  <view class="banner">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+      indicator-color="rgb(255,255,255)"
+      indicator-active-color="#4CAF50">
+      <block wx:for="{{banner}}" wx:key="index">
+        <swiper-item>
+            <image mode="widthFix" src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="jgg padding-lr">
+    <view class="jgg-item" wx:for="{{jgg}}" wx:key="index">
+      <view style="background:{{bgColor[index]}}">
+        <image src="../../../images/goods/m{{index+1}}.png" data-i="{{index}}" bindtap="toPath"></image>
+      </view>
+      <view>{{item}}</view>
+    </view>
+  </view>
+  <view class="d-flex flex-between padding-lr cyyw">
+    <view>常用药物</view>
+    <image class="to" src="../../../images/mine/to.png"></image>
+  </view>
+  <view class="scroll-content padding-lr">
+    <scroll-view scroll-x="true" style=" width:686rpx;height: 100%;white-space: nowrap;box-sizing:border-box;">
+      <view class="scroll-item" wx:for="{{as}}" wx:key="index">
+        <image src="../../../images/goods/m2.png"></image>
+        <view><text>博苏 富马酸比索\n洛尔片{{item}}</text></view>
+        <view>￥21</view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="jxtj padding-lr">
+    <view class="title">精选推荐</view>
+    <view class='tj-content'>
+      <view class="tj-item" wx:for="{{as}}" wx:key="index">
+        <view>
+          <image src="../../../images/goods/m1.png"></image>
+        </view>
+        <view>博苏 富马酸比索洛尔片{{item}}</view>
+        <view class="d-flex flex-between">
+          <view>￥21</view>
+          <view>
+            <image src="../../../images/goods/m10.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

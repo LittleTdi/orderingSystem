@@ -1,0 +1,59 @@
+<view class="app">
+  <view class="my-bg">
+    <image src="../../../images/my-bg.png"></image>
+    <view class="my-info">
+      <view class="avatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <button class="login">登录</button>
+    </view>
+  </view>
+  <view class="info">
+    <view class="info-item border-b">
+      <view class="item-content">
+        <image class="item-icon" src="../../../images/mine/order.png"></image>
+        <view class="item-name">我的订单</view>
+      </view>
+      <image class="item-to" src="../../../images/mine/to.png"></image>
+    </view>
+    <view class="info-item border-b">
+      <view class="item-content">
+        <image class="item-icon" src="../../../images/mine/doctor.png"></image>
+        <view class="item-name">私人医生</view>
+      </view>
+      <image class="item-to" src="../../../images/mine/to.png"></image>
+    </view>
+    <view class="info-item border-b">
+      <view class="item-content">
+        <image class="item-icon" src="../../../images/mine/addr.png"></image>
+        <view class="item-name">收货地址</view>
+      </view>
+      <image class="item-to" src="../../../images/mine/to.png"></image>
+    </view>
+    <view class="info-item border-b">
+      <view class="item-content">
+        <image class="item-icon" src="../../../images/mine/collect.png"></image>
+        <view class="item-name">我的收藏</view>
+      </view>
+      <image class="item-to" src="../../../images/mine/to.png"></image>
+    </view>
+  </view>
+  <view class="info margin-top">
+    <view class="info-item border-b">
+      <view class="item-content">
+        <image class="item-icon" src="../../../images/mine/server-center.png"></image>
+        <view class="item-name">客服中心</view>
+      </view>
+      <image class="item-to" src="../../../images/mine/to.png"></image>
+    </view>
+  </view>
+  <view class="info margin-top">
+    <view class="info-item border-b">
+      <view class="item-content">
+        <image class="item-icon" src="../../../images/mine/set.png"></image>
+        <view class="item-name">设置</view>
+      </view>
+      <image class="item-to" src="../../../images/mine/to.png"></image>
+    </view>
+  </view>
+</view>

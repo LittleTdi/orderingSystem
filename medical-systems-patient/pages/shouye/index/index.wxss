@@ -1,0 +1,184 @@
+.inp-search{
+  width:100%;
+  padding:20rpx 32rpx;
+}
+.inp-search>input{
+  height:72rpx;
+  border-radius:36rpx;
+  background-color:#fff;
+  margin:0 32rpx;
+  padding-left:84rpx;
+  font-size:14px;
+  color:#B0B4B9;
+  background-repeat: no-repeat;
+  background-position: 32rpx 20rpx;
+}
+.banner image{
+  width:100%;
+  height:300rpx;
+  z-index:9;
+}
+swiper{
+  width:100%;
+  height:300rpx;
+}
+.banner{
+  height:300rpx;
+  width:100vw;
+}
+/*
+.swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal{
+     margin-bottom: 2rpx;
+}
+.swiper-box .wx-swiper-dot{
+    width:6px;
+    display: inline-flex;
+    height: 6px;
+    margin-left: 20rpx;
+    justify-content:space-between;
+}
+.swiper-box .wx-swiper-dot::before{
+    content: '';
+    flex-grow: 1; 
+    background: rgba(255,255,255,1);
+    border-radius:1rpx;
+}
+.swiper-box .wx-swiper-dot-active::before{
+    background:#4CAF50;   
+}
+*/
+.content{
+  padding:40rpx 32rpx;
+  background:#fff;
+  width:100%;
+  box-sizing: border-box;
+}
+.content-item{
+  display:flex;
+  justify-content: space-between;
+  height:140rpx;
+  /* width:100%; */
+  box-sizing: border-box;
+  background:#fff;
+  border-radius:40rpx;
+  align-items: center;
+  padding:0 40rpx;
+  border:1px solid #f5f6f6;
+}
+.content-item:last-child{
+  margin-top:40rpx;
+}
+.content-item>image{
+  width:24rpx;
+  height:24rpx;
+}
+.content-item-content>view{
+  font-size:40rpx;
+  color:#24262E;
+  margin-left:24rpx;
+}
+.content-item-content{
+  display:flex;
+  align-items: center;
+}
+.content-item-content>image{
+  width:52rpx;
+  height:52rpx;
+}
+.my-doctor{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  box-sizing: border-box;
+  padding:0 32rpx;
+  background:#fff;
+  height:88rpx;
+  margin-top:20rpx;
+}
+.my-doctor>view{
+  color:#24262E;
+  font-size:28rpx;
+}
+.my-doctor image{
+  width:24rpx;
+  height:24rpx;
+}
+.doctors{
+  margin-top:20rpx;
+  background:#fff;
+  box-sizing: border-box;
+  padding:0 32rpx;
+  width:100%;
+}
+.doctors-item{
+  padding-top:38rpx;
+  padding-bottom: 14rpx;
+  background:#fff;
+  display:flex;
+  box-sizing: border-box;
+}
+.doctor-include{
+  margin-top:16rpx;
+  margin-left:24rpx;
+}
+.doctor-avatar{
+  width:112rpx;
+  height:112rpx;
+  border-radius:50%;
+  overflow: hidden;
+  background:#f00;
+}
+.d-mt-1{
+  margin-top:10rpx;
+}
+.dml-1{
+  margin-left:16rpx;
+}
+.d-detail{
+  color:#111A2C;
+  font-size:24rpx;
+  width:528rpx;
+}
+.doctor-p{
+  display: flex;
+  align-items: flex-end;
+}
+.doctor-p view{
+  font-size:24rpx;
+}
+.doctor-p>view>view:first-child{
+  color: #FF5757;
+}
+.doctor-p>view>view:last-child{
+  color:#111A2C;
+}
+.btn-zx{
+  width:172rpx;
+  height:54rpx;
+  border-radius: 50rpx;
+  background:#4CAF50;
+  color:#fff;
+  font-size: 14px;
+  line-height: 2;
+}
+.news{
+  padding:14rpx 32rpx;
+  position: absolute;
+  top:126rpx;
+  left:32rpx;
+  background:rgba(244,248,250,0.4);
+  border-radius:12rpx;
+  width:686rpx;
+  box-sizing: border-box;
+  height:64px;
+  text-overflow: -o-ellipsis-lastline;/*css3中webkit内核提供的一个方法类似ellipsis*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;/*自适应盒子*/
+  -webkit-line-clamp: 1;/*此处为1行,如果是两行就改成2*/
+  -webkit-box-orient: vertical;
+  word-break: break-all;/*允许在单词内换行 */
+  color:#24262E;
+  font-size: 14px;
+}
