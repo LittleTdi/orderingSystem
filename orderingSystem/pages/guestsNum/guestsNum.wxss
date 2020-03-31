@@ -1,0 +1,37 @@
+.order{
+  width:100vw;
+  height:100vh;
+  z-index:0;
+}
+.content{
+  position: absolute;
+  top:10%;
+  width:100%;
+}
+.title>text:first-child{
+  font-size:50px;
+  font-weight:700;
+}
+.title>text:last-child{
+  font-size:25px;
+  font-weight:600;
+}
+.title>text{
+  color:#fff;
+}
+.title{
+  padding:0 0 5% 10%;
+}
+.chosen{
+  width:94%;
+  height:350px;
+  background:#fff;
+  margin:auto;
+  border-radius:7px;
+  padding:10px;
+  overflow: scroll;
+}
+.cu-btn.round.lg{
+  width:23% !important;
+  margin:1%;
+}
